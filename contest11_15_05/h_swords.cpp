@@ -1,0 +1,36 @@
+#include<cstdio>
+#include<numeric>
+#include<vector>
+using namespace std;
+
+int main(){
+    int n;
+    int max1, index1=-1, max2, index2=-1;
+    scanf("%d", &n);
+    vector <int> a(n);
+    scanf("%d", &a[0]);
+    max1 = a[0];
+    for(int i = 1; i < n; i++){
+        scanf("%d", &a[i]);
+        if(a[i] > max1){
+            max1 = a[i];
+            index1 = i;
+        }
+    }
+
+    int x = max1;
+    int s = accumulate(a.begin(),a.end(),0);
+    while(true){
+        if
+        x++;
+    }
+    int y = (n*x -s);
+    int z = 1;
+    while(y/z != 0 && y%z == 0){
+        z++;
+    }
+    y = y/z;
+    printf("%d %d\n", y, z);
+
+    return 0;
+}
